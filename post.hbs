@@ -1,0 +1,23 @@
+{{!< default}}
+
+{{#post}}
+
+    <header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+        <div class="container">
+            <div class="title animated fadeInUp">
+                <h1>{{title}}</h1>
+                <div class="share">
+                    Share this article on <a href="http://twitter.com/share?text={{title}}&url={{url absolute='true'}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a>, <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">Facebook</a> or <a href="https://plus.google.com/share?url={{url absolute='true'}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">Google+</a>.
+                </div>
+            </div>
+
+            {{> sidebar}}
+
+        </div>
+    </header>
+
+    {{> content}}
+
+    {{!> comments}}
+
+{{/post}}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{@blog.title}}</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="{{@blog.description}}" />
+        <meta name="author" content="{{@blog.title}}" />
+        <meta name="designer" content="Hayden Bleasel" />
+        <meta name="rating" content="general" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{{@blog.title}}" />
+        <meta property="og:url" content="{{@blog.url}}" />
+        <meta property="og:description" content="{{@blog.description}}" />
+        <meta property="og:locale" content="en_US" />
+        <link rel="canonical" href="{{@blog.url}}" />
+        {{#if @blog.cover}}<link rel="prefetch" href="{{@blog.cover}}" />{{/if}}
+        <link rel="stylesheet" href="/assets/css/phantom.css" />
+        <script src="/assets/js/html5shiv-3.7.0.js"></script>
+        <script src="/assets/js/respond-1.4.0.js"></script>
+        {{ghost_head}}
+    </head>
+    <body class="{{body_class}}">
+        <nav class="animated fadeIn navigation">
+            <div class="container">
+                <a href="{{@blog.url}}" class="text-right sidebar brand">
+                    <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                </a>
+                <p>{{@blog.title}}</p>
+            </div>
+        </nav>
+        <div class="main">
+            {{{body}}}
+        </div>
+        <footer class="animated fadeInUp" id="footer">
+            <div class="text-center">
+                <h1>All content copyright &copy; {{@blog.title}} {{date format="YYYY"}}</h1>
+            </div>
+        </footer>
+    </body>
+</html>

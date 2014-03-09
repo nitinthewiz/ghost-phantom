@@ -1,0 +1,17 @@
+<div class="sidebar text-right meta">
+    <div class="published animated fadeInUp">
+        <strong>Published</strong>
+        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format='DD MMM YYYY'}}</time>
+    </div>
+    <span class="separator animated fadeInUp">//</span>
+    <div class="tags animated fadeInUp">
+        {{#if tags}}
+            <strong>Tags</strong>
+            <ul>
+                {{#foreach tags}}
+                    <li>{{name}}</li>
+                {{/foreach}}
+            </ul>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,22 @@
+{{!< default}}
+
+{{#foreach posts}}
+
+    <header class="animated fadeIn">
+        <div class="container">
+            <div class="title animated fadeInUp">
+                <a href="{{url}}">
+                    <h1>{{title}}</h1>
+                </a>
+            </div>
+            {{> sidebar}}
+        </div>
+    </header>
+
+    <article class="animated fadeInUp {{post_class}}">
+        <div class="container">
+            {{content words="100"}}<p>&hellip;</p>
+        </div>
+    </article>
+
+{{/foreach}}
