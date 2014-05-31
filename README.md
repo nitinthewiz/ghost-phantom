@@ -13,7 +13,7 @@ As Ghost is and always will be in development, Phantom will evolve with it. As n
 - **Responsive Design:** Phantom was designed and developed with a fully responsive, mobile-first design.
 - **Code Support:** Want to insert a Markdown `code block` or embed a GitHub Gist? Phantom has both covered.
 - **Comment System:** Adding a Disqus commenting system to your blog has never been easier.
-- **Custom Fonts:** Phantom uses 'Open Sans' served be Google Web Fonts.
+- **Custom Fonts:** Phantom uses 'Open Sans' served by Google Web Fonts.
 - **Social Sharing:** Each post is set up with Facebook, Twitter and Google+ social sharing options.
 - **Ghost Features:** Tags, dates, partials and all the helpful Ghost features have been preconfigured.
 
