@@ -33,7 +33,6 @@ p,
 ul,
 ol {
   margin-bottom: 40px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 34px;
@@ -76,8 +75,7 @@ a:hover {
 }
 
 strong {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .container,
@@ -140,7 +138,6 @@ footer {
 
 .navigation {
   height: 90px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-weight: 100;
   background: #1b1f23;
   -webkit-animation-duration: 1s;
@@ -187,7 +184,6 @@ footer {
 
 header {
   position: relative;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-weight: 300;
   color: #fff;
   background-position: center center;
@@ -222,7 +218,6 @@ header .container .title {
 
 header .container .title h1 {
   margin: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-size: 55px;
   font-weight: 300;
   line-height: 60px;
@@ -323,7 +318,6 @@ header .container .share a {
 
 .meta ul,
 .meta time {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-weight: 300;
   color: #7f8c8d;
 }
@@ -503,7 +497,6 @@ article iframe {
 article h1,
 article h2,
 article h3 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-weight: 300;
   color: #464c4c;
 }
@@ -603,7 +596,6 @@ footer {
 
 footer h1 {
   margin: 0 0 10px 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #464c4c;
