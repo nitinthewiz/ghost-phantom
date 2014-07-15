@@ -41,9 +41,13 @@
         {{/if}}
         <link rel="dns-prefetch" href="http://cdnjs.com/" />
 
+        {{! Scripts and Stylesheets. }}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css" />
         <link rel="stylesheet" href="/assets/css/phantom.css" />
-        <script src="/assets/js/html5shiv-3.7.0.js"></script>
-        <script src="/assets/js/respond-1.4.0.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+
         {{ghost_head}}
 
     </head>
@@ -64,5 +68,11 @@
                 <h1>All content copyright &copy; {{@blog.title}} {{date format="YYYY"}}</h1>
             </div>
         </footer>
+
+        {{ghost_foot}}
+
+        {{! Deferred scripts. }}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
     </body>
 </html>
