@@ -1,33 +1,57 @@
 <!doctype html>
 <html lang="en">
     <head>
+
+        {{! Document settings and metadata. }}
         <title>{{@blog.title}}</title>
         <meta charset="utf-8" />
         <meta name="description" content="{{@blog.description}}" />
         <meta name="author" content="{{@blog.title}}" />
         <meta name="designer" content="Hayden Bleasel" />
         <meta name="rating" content="general" />
+
+        {{! Robots and Viewport. }}
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        {{! iOS, Android and Windows stuff. }}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="format-detection" content="telephone=yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+
+        {{! OpenGraph for Facebook. }}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="{{@blog.title}}" />
         <meta property="og:url" content="{{@blog.url}}" />
         <meta property="og:description" content="{{@blog.description}}" />
         <meta property="og:locale" content="en_US" />
-        {{#if @blog.cover}}<link rel="prefetch" href="{{@blog.cover}}" />{{/if}}
+
+        {{! Twitter Card }}
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:title" content="{{@blog.title}}" />
+        <meta property="twitter:description" content="{{@blog.description}}" />
+        <meta property="twitter:url" content="{{@blog.url}}" />
+
+        {{! Prerendering and Prefetching. }}
+        {{#if @blog.cover}}
+            <meta property="twitter:image" content="{{@blog.cover}}" />
+            <link rel="prerender" href="{{@blog.cover}}" />
+            <link rel="prefetch" href="{{@blog.cover}}" />
+        {{/if}}
+        <link rel="dns-prefetch" href="http://cdnjs.com/" />
+
         <link rel="stylesheet" href="/assets/css/phantom.css" />
         <script src="/assets/js/html5shiv-3.7.0.js"></script>
         <script src="/assets/js/respond-1.4.0.js"></script>
         {{ghost_head}}
+
     </head>
     <body class="{{body_class}}">
         <nav class="animated fadeIn navigation">
             <div class="container">
                 <a href="{{@blog.url}}" class="text-right sidebar brand">
-                    <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                    {{#if @blog.logo}}<img src="{{@blog.logo}}" alt="{{@blog.title}}" />{{/if}}
                 </a>
                 <p>{{@blog.title}}</p>
             </div>
