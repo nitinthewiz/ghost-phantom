@@ -551,6 +551,7 @@ article h3 {
 }
 
 article input {
+  width: 100%;
   padding: 6px 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
