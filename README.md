@@ -8,10 +8,10 @@ A minimalistic theme for [Ghost](https://ghost.org/) inspired by the [Designmodo
 
 As Ghost is and always will be in development, Phantom will evolve with it. As new features and concepts are implemented in Ghost, Phantom will adapt and enhance to suit these new features. If you have any problems or feature requests, feel free to open an issue or submit a pull request.
 
-- **Cover Photos:** Large background cover photos covered by a dark, transparent wash allow for overlaying text.
+- **Cover Photos:** Large cover photos covered by a dark, transparent wash allow for overlaying text.
 - **CDN Resources:** All vendor stylesheets and scripts are loaded from [cdn.js](http://cdnjs.com/) for maximum performance.
 - **Responsive Design:** Phantom was designed and developed with a fully responsive, mobile-first design.
-- **Code Support:** Want to insert a Markdown `code block` or embed a GitHub Gist? Phantom has both covered.
+- **Code Support:** Want to insert a Markdown `code block` or embed a GitHub Gist? We've both covered.
 - **Comment System:** Adding a Disqus commenting system to your blog has never been easier.
 - **Custom Fonts:** Phantom uses 'Open Sans' served by Google Web Fonts.
 - **Social Sharing:** Each post is set up with Facebook, Twitter and Google+ social sharing options.
