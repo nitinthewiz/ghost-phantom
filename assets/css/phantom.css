@@ -144,36 +144,36 @@ footer {
           animation-duration: 1s;
 }
 
-.navigation p,
-.navigation a {
+.navigation .content,
+.navigation .brand {
   display: block;
   float: left;
 }
 
-.navigation a {
+.navigation .brand {
   height: 30px;
   padding: 30px 0;
   border: none;
 }
 
-.navigation a img {
+.navigation .brand img {
   width: auto;
   height: 30px;
 }
 
-.navigation p {
+.navigation .content {
   margin: 0;
   line-height: 90px;
 }
 
 @media (max-width: 992px) {
-  .navigation p {
+  .navigation .content {
     margin-left: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .navigation p {
+  .navigation .content {
     font-size: 18px;
   }
 }
