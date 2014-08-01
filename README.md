@@ -33,3 +33,21 @@ You'll also need to enter your Disqus "shortname". Just head on over to the [Dis
     var disqus_shortname = 'YOUR_SHORTNAME_HERE';
 
 Once you have that, just open `partials/comments.hbs` and replace the `YOUR_SHORTNAME_HERE` variable with the one Disqus gave you. Try not to edit any other settings or replace the code though, it's preconfigured to work with Ghost.
+
+## Featured images
+
+While featured images are not part of Ghost (yet), there are ways to implement them with some hacky Javascript. In `phantom.js`, add the following code inside the jQuery wrapper:
+
+```
+var image = $("article img:first-child");
+$("header").css('background-image', 'url(' + image.attr('src') + ')');
+image.remove();
+```
+
+Also remove the background-cover code from `post.hbs`:
+
+```
+{{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}
+```
+
+This will remove the first image in your article and use it as the cover photo, so make sure you put a featured image at the top of your article.
