@@ -3,13 +3,12 @@
     <head>
 
         {{! Document settings and metadata }}
-        <title>{{@blog.title}}</title>
+        <title>{{meta_title}}</title>
         <meta charset="utf-8" />
-        <meta name="description" content="{{@blog.description}}" />
-        <meta name="author" content="{{@blog.title}}" />
+        <meta name="description" content="{{meta_description}}" />
         <meta name="designer" content="Hayden Bleasel" />
         <meta name="rating" content="general" />
-        <meta name="keywords" content="ghost, blog, {{@blog.title}}" />
+        <meta name="keywords" content="ghost, blog, {{meta_title}}" />
 
         {{! iOS, Android and Windows stuff }}
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -24,19 +23,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
         {{! OpenGraph for Facebook }}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="{{@blog.title}}" />
-        <meta property="og:url" content="{{@blog.url}}" />
-        <meta property="og:description" content="{{@blog.description}}" />
+        <meta property="og:title" content="{{meta_title}}" />
+        <meta property="og:url" content="{{url absolute='true'}}" />
+        <meta property="og:description" content="{{meta_description}}" />
         <meta property="og:image" content="{{asset 'images/open-graph.png'}}" />
         <meta property="og:locale" content="en_US" />
 
         {{! Twitter Card }}
-        <meta property="twitter:card" content="summary" />
-        <meta property="twitter:title" content="{{@blog.title}}" />
-        <meta property="twitter:description" content="{{@blog.description}}" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="{{meta_title}}" />
+        <meta property="twitter:description" content="{{meta_description}}" />
         {{#if @blog.cover}}<meta property="twitter:image" content="{{@blog.cover}}" />{{/if}}
-        <meta property="twitter:url" content="{{@blog.url}}" />
+        <meta property="twitter:url" content="{{url absolute='true'}}" />
 
         {{! Icons }}
         <link rel="icon" href="{{asset 'favicon.ico'}}" />
@@ -59,6 +57,9 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
 
+        {{! Page-Specific Metadata }}
+        {{{block "meta"}}}
+
         {{ghost_head}}
 
     </head>
@@ -76,7 +77,7 @@
         </div>
         <footer class="animated fadeInUp" id="footer">
             <div class="text-center">
-                <h1>All content copyright &copy; {{@blog.title}} {{date format="YYYY"}}</h1>
+                <h1>All content copyright &copy; {{@blog.title}} {{date format='YYYY'}}</h1>
             </div>
         </footer>
 
