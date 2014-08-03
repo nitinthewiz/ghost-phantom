@@ -39,11 +39,13 @@ Once you have that, just open `partials/comments.hbs` and replace the `YOUR_SHOR
 While featured images are not part of Ghost (yet), there are ways to implement them with some hacky Javascript. In `phantom.js`, add the following code inside the jQuery wrapper:
 
 ```
-var image = $("article img:first-child"),
-    src = image.attr('src');
-$("header").css('background-image', 'url(' + src + ')');
-$("meta[property='og:image'], meta[property='twitter:image']").attr('content', src);
-image.remove();
+if ($("body").hasClass("post-template")) {
+    var image = $("article img:first-child"),
+        src = image.attr('src');
+    $("header").css('background-image', 'url(' + src + ')');
+    $("meta[property='og:image'], meta[property='twitter:image']").attr('content', src);
+    image.remove();
+}
 ```
 
 Also remove the background-cover code from `post.hbs`:
