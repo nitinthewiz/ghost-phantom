@@ -1,6 +1,6 @@
 {
-  "name": "phantom",
-  "version": "2.1.0",
+  "name": "Phantom",
+  "version": "2.2.0",
   "description": "A minimalistic theme for Ghost inspired by the Designmodo Journal.",
   "repository": {
     "type": "git",
@@ -10,5 +10,6 @@
   "bugs": {
     "url": "https://github.com/haydenbleasel/phantom/issues"
   },
-  "homepage": "https://github.com/haydenbleasel/phantom"
+  "homepage": "https://github.com/haydenbleasel/phantom",
+  "private": true
 }
