@@ -4,6 +4,8 @@
 {{! Post Context }}
 {{#post}}
 
+    {{> post-meta}}
+
     {{! Header }}
     <header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         <div class="container">

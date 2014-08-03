@@ -5,7 +5,6 @@
         {{! Document settings and metadata }}
         <title>{{meta_title}}</title>
         <meta charset="utf-8" />
-        <meta name="description" content="{{meta_description}}" />
         <meta name="designer" content="Hayden Bleasel" />
         <meta name="rating" content="general" />
         <meta name="keywords" content="ghost, blog, {{meta_title}}" />
@@ -24,17 +23,13 @@
 
         {{! OpenGraph for Facebook }}
         <meta property="og:title" content="{{meta_title}}" />
-        <meta property="og:url" content="{{url absolute='true'}}" />
-        <meta property="og:description" content="{{meta_description}}" />
         <meta property="og:image" content="{{asset 'images/open-graph.png'}}" />
         <meta property="og:locale" content="en_US" />
 
         {{! Twitter Card }}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="{{meta_title}}" />
-        <meta property="twitter:description" content="{{meta_description}}" />
         {{#if @blog.cover}}<meta property="twitter:image" content="{{@blog.cover}}" />{{/if}}
-        <meta property="twitter:url" content="{{url absolute='true'}}" />
 
         {{! Icons }}
         <link rel="icon" href="{{asset 'favicon.ico'}}" />

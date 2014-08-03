@@ -2,10 +2,7 @@
 
 {{#post}}
 
-    {{#contentFor "meta"}}
-        <meta name="author" content="{{author.name}}" />
-        <meta property="og:type" content="article" />
-    {{/contentFor}}
+    {{> post-meta}}
 
     <header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         <div class="container">
