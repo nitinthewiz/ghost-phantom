@@ -36,7 +36,7 @@ Once you have that, just open `partials/comments.hbs` and replace the `YOUR_SHOR
 
 ## Featured images
 
-While featured images are not part of Ghost (yet), there are ways to implement them with some hacky Javascript. In `phantom.js`, add the following code just after `{{> content}}` in `post.hbs`:
+While featured images are not part of Ghost (yet), there are ways to implement them with some hacky Javascript. In `post.hbs`, add the following code just after `{{> content}}`:
 
 ```
 <script>
