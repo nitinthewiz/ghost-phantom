@@ -41,16 +41,16 @@
             <link rel="prerender" href="{{@blog.cover}}" />
             <link rel="prefetch" href="{{@blog.cover}}" />
         {{/if}}
-	<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+        <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
 
-	{{! Scripts and Stylesheets }}
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" />
-	<link rel="stylesheet" href="{{asset 'css/basics.css'}}" />
-	<link rel="stylesheet" href="{{asset 'css/animate.css'}}" />
-	<link rel="stylesheet" href="{{asset 'css/gist.css'}}" />
-	<link rel="stylesheet" href="{{asset 'css/phantom.css'}}" />
-	<script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
-	<script src="{{asset 'js/respond.js'}}"></script>
+        {{! Scripts and Stylesheets }}
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" />
+        <link rel="stylesheet" href="{{asset 'css/basics.css'}}" />
+        <link rel="stylesheet" href="{{asset 'css/animate.css'}}" />
+        <link rel="stylesheet" href="{{asset 'css/gist.css'}}" />
+        <link rel="stylesheet" href="{{asset 'css/phantom.css'}}" />
+        <script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
+        <script src="{{asset 'js/respond.js'}}"></script>
 
         {{! Page-Specific Metadata }}
         {{{block "meta"}}}
@@ -70,7 +70,7 @@
         <div class="main">
             {{{body}}}
         </div>
-	<footer class="animated fadeIn" id="footer">
+        <footer class="animated fadeIn" id="footer">
             <div class="text-center">
                 <h1>All content copyright &copy; {{@blog.title}} {{date format='YYYY'}}</h1>
             </div>
@@ -78,11 +78,11 @@
 
         {{ghost_foot}}
 
-	{{! Deferred scripts }}
-	<script src="{{asset 'js/fastclick.js'}}"></script>
-	<script src="{{asset 'js/retina.js'}}"></script>
-	<script src="{{asset 'js/cssParentSelector.js'}}"></script>
-	<script src="{{asset 'js/phantom.js'}}"></script>
+        {{! Deferred scripts }}
+        <script src="{{asset 'js/fastclick.js'}}"></script>
+        <script src="{{asset 'js/retina.js'}}"></script>
+        <script src="{{asset 'js/cssParentSelector.js'}}"></script>
+        <script src="{{asset 'js/phantom.js'}}"></script>
 
     </body>
 </html>
