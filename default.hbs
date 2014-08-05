@@ -43,11 +43,11 @@
         {{/if}}
 	<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
 
-        {{! Scripts and Stylesheets }}
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" />
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" />
+	{{! Scripts and Stylesheets }}
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" />
+	<link rel="stylesheet" href="{{asset 'css/basics.css'}}" />
 	<link rel="stylesheet" href="{{asset 'css/animate.css'}}" />
-        <link rel="stylesheet" href="{{asset 'css/gist.css'}}" />
+	<link rel="stylesheet" href="{{asset 'css/gist.css'}}" />
 	<link rel="stylesheet" href="{{asset 'css/phantom.css'}}" />
 	<script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
 	<script src="{{asset 'js/respond.js'}}"></script>
@@ -78,10 +78,11 @@
 
         {{ghost_foot}}
 
-        {{! Deferred scripts }}
+	{{! Deferred scripts }}
 	<script src="{{asset 'js/fastclick.js'}}"></script>
 	<script src="{{asset 'js/retina.js'}}"></script>
-        <script src="{{asset 'js/phantom.js'}}"></script>
+	<script src="{{asset 'js/cssParentSelector.js'}}"></script>
+	<script src="{{asset 'js/phantom.js'}}"></script>
 
     </body>
 </html>
