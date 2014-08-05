@@ -181,9 +181,12 @@ article pre code {
 article hr {
 	border:1px solid #ddd;
 }
+article p > img {
+	display:block;
+	margin:0 auto;
+}
 article p! > img {
 	width:800px;
-	text-align:center;
 	margin:80px -150px;
 }
 article h1, article h2, article h3 {
