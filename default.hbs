@@ -41,16 +41,16 @@
             <link rel="prerender" href="{{@blog.cover}}" />
             <link rel="prefetch" href="{{@blog.cover}}" />
         {{/if}}
-        <link rel="dns-prefetch" href="http://cdnjs.com/" />
+	<link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
 
         {{! Scripts and Stylesheets }}
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" />
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css" />
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" />
-        <link rel="stylesheet" href="{{asset 'css/phantom.css'}}" />
+	<link rel="stylesheet" href="{{asset 'css/animate.css'}}" />
         <link rel="stylesheet" href="{{asset 'css/gist.css'}}" />
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<link rel="stylesheet" href="{{asset 'css/phantom.css'}}" />
+	<script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
+	<script src="{{asset 'js/respond.js'}}"></script>
 
         {{! Page-Specific Metadata }}
         {{{block "meta"}}}
@@ -79,8 +79,9 @@
         {{ghost_foot}}
 
         {{! Deferred scripts }}
-        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+	<script src="{{asset 'js/fastclick.js'}}"></script>
+	<script src="{{asset 'js/retina.js'}}"></script>
         <script src="{{asset 'js/phantom.js'}}"></script>
+
     </body>
 </html>
