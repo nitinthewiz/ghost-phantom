@@ -181,8 +181,9 @@ article pre code {
 article hr {
 	border:1px solid #ddd;
 }
-article img, article iframe {
-	max-width:800px;
+article p! > img {
+	width:800px;
+	text-align:center;
 	margin:80px -150px;
 }
 article h1, article h2, article h3 {
@@ -211,7 +212,7 @@ article input {
 	outline:none;
 	-webkit-transition:border .25s;
 	transition:border .25s;
-	padding:6px 12px;
+	padding:8px 16px;
 }
 article input:hover {
 	border:1px solid #bbb;
