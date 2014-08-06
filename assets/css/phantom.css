@@ -198,6 +198,9 @@ article pre {
 	border-radius:8px;
 	padding:20px;
 }
+article .gist pre {
+	border-radius:0;
+}
 article pre code {
 	font-family:Consolas, "Liberation Mono", Courier, monospace;
 	font-size:14px;
