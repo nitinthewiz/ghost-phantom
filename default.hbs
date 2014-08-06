@@ -23,13 +23,13 @@
 
         {{! OpenGraph for Facebook }}
         <meta property="og:title" content="{{meta_title}}" />
-        <meta property="og:image" content="{{asset 'images/open-graph.png'}}" />
+        <meta property="og:image" content="{{@blog.url}}{{asset 'images/open-graph.png'}}" />
         <meta property="og:locale" content="en_US" />
 
         {{! Twitter Card }}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="{{meta_title}}" />
-        {{#if @blog.cover}}<meta property="twitter:image" content="{{@blog.cover}}" />{{/if}}
+        {{#if @blog.cover}}<meta property="twitter:image" content="{{@blog.url}}{{@blog.cover}}" />{{/if}}
 
         {{! Icons }}
         <link rel="icon" href="{{asset 'favicon.ico'}}" />
