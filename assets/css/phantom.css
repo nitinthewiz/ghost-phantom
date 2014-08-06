@@ -63,9 +63,9 @@ strong {
 	float:left;
 }
 .navigation .brand {
-	height:30px;
 	border:none;
 	padding:30px 0;
+	line-height:0;
 }
 .navigation .brand img {
 	width:auto;
@@ -245,17 +245,21 @@ footer h1 {
 footer p {
 	margin:0;
 }
+.home-template header .container .title a, .archive-template header .container .title a {
+	display:block;
+	border-bottom:none;
+}
 .home-template header .container, .archive-template header .container {
 	padding-bottom:0;
+}
+.home-template article, .archive-template article {
+	padding:40px 0;
 }
 .home-template header .container a:hover, .archive-template header .container a:hover {
 	color:#2e9fff;
 }
 .home-template article, .archive-template article {
 	border-bottom:2px solid #f2f3f4;
-}
-.home-template article p, .archive-template article p {
-	display:inline;
 }
 .page #journal-link {
 	color:#7f8c8d;
