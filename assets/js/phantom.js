@@ -2,7 +2,9 @@
 /*global $, FastClick*/
 
 $(function () {
+
     'use strict';
+
     FastClick.attach(document.body);
 
     $('#twitter').click(function () {
@@ -19,4 +21,5 @@ $(function () {
         window.open(this.href, 'google-plus-share', 'width=490,height=530');
         return false;
     });
+
 });
