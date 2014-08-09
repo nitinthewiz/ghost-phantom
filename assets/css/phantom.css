@@ -132,9 +132,9 @@ header .container .title {
 	animation-duration:1s;
 }
 header .container .title h1 {
-	font-size:55px;
+	font-size:49px;
 	font-weight:300;
-	line-height:60px;
+	line-height:54px;
 	margin:0;
 }
 header .container .share {
@@ -353,11 +353,11 @@ header .container .share a, article iframe {
 	}
 	.meta {
 		width:400px;
-		margin-top:40px;
+		margin-top:20px;
 	}
-	.main article p {
-		width: 100% !important;
-		margin: 80px 0 !important;
+	article p! > img {
+		width: 100%;
+		margin: 80px 0;
 	}
 	footer span {
 		display:block;
