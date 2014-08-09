@@ -308,7 +308,68 @@ header .container .share a, article iframe {
 .home-template header .container a, .archive-template header .container a, .home-template .meta strong, .archive-template .meta strong {
 	color:#464c4c;
 }
-@media max-width 480px {
+@media (max-width: 992px) {
+	.container, .pagination {
+		width:auto;
+		max-width:650px;
+		padding:0 8%;
+	}
+	.sidebar {
+		position:static;
+		top:0;
+		left:0;
+		width:auto;
+	}
+	.navigation .content {
+		margin-left:20px;
+	}
+	header .container .title h1 {
+		margin:0;
+	}
+	header .container .title {
+		width:90%;
+	}
+	header .container {
+		padding-top:120px;
+		padding-bottom:240px;
+	}
+	.meta li:after {
+		content:",";
+	}
+	.meta li:last-child:after {
+		content:"";
+	}
+	.meta strong {
+		display:none;
+	}
+	.meta .published:after {
+		margin-left:10px;
+	}
+	.meta .published, .meta .tags {
+		margin-top:0;
+	}
+	.meta.text-right {
+		text-align:left;
+	}
+	.meta {
+		width:400px;
+		margin-top:40px;
+	}
+	.main article p {
+		width: 100% !important;
+		margin: 80px 0 !important;
+	}
+	footer span {
+		display:block;
+	}
+	.home-template header, .archive-template header {
+		padding-bottom:0;
+	}
+	.meta ul, .meta li, .meta time, .meta .published, .meta .tags, .meta .separator {
+		display:inline-block;
+	}
+}
+@media (max-width: 480px) {
 	p, ul, ol {
 		margin-bottom:20px;
 		font-size:13px;
@@ -369,70 +430,6 @@ header .container .share a, article iframe {
 	}
 	header .container .title, .meta {
 		width:260px;
-	}
-}
-@media max-width 992px {
-	.container, .pagination {
-		width:auto;
-		max-width:500px;
-		padding:0 8%;
-	}
-	.sidebar {
-		position:static;
-		top:0;
-		left:0;
-		width:auto;
-	}
-	.navigation .content {
-		margin-left:20px;
-	}
-	header .container .title h1 {
-		margin:0;
-	}
-	header .container .title {
-		width:90%;
-	}
-	header .container {
-		padding-top:120px;
-		padding-bottom:240px;
-	}
-	.meta li:after {
-		content:",";
-	}
-	.meta li:last-child:after {
-		content:"";
-	}
-	.meta strong {
-		display:none;
-	}
-	.meta .published:after {
-		margin-left:10px;
-	}
-	.meta .published, .meta .tags {
-		margin-top:0;
-	}
-	.meta.text-right {
-		text-align:left;
-	}
-	.meta {
-		width:400px;
-		margin-top:40px;
-	}
-	article img, article iframe {
-		max-width:100%;
-		margin:40px 0;
-	}
-	article iframe {
-		height:250px!important;
-	}
-	footer span {
-		display:block;
-	}
-	.home-template header, .archive-template header {
-		padding-bottom:0;
-	}
-	.meta ul, .meta li, .meta time, .meta .published, .meta .tags, .meta .separator {
-		display:inline-block;
 	}
 }
 @media print {
