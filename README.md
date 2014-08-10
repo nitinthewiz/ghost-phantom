@@ -69,4 +69,4 @@ I don't really mind what you do with this project, as long as your blog looks aw
 
 # Credits
 
-I'd like to give a huge thank you to David from [FounderSquad](http://foundersquad.com/en/articles/) for helping me resolve a number of issues with the theme and introduce a new "featured images" functionality.
+I'd like to give a huge thank you to David Dupouy from [FounderSquad](http://foundersquad.com/en/articles/) for helping me resolve a number of issues with the theme and introduce a new "featured images" functionality.
