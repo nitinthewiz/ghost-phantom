@@ -299,7 +299,7 @@ footer p {
 .navigation #journal-link, .page #journal-link:hover, .page #portfolio-link {
 	color:#fff;
 }
-header .container .share a, article iframe {
+header .container .share a {
 	border:none;
 }
 .home-template header:before, .archive-template header:before, .home-template article h1, .archive-template article h1, .home-template article h2, .archive-template article h2, .home-template article h3, .archive-template article h3 {
@@ -401,11 +401,8 @@ header .container .share a, article iframe {
 	.meta .separator {
 		display:none;
 	}
-	article img, article iframe {
+	article p! > img {
 		margin:20px 0;
-	}
-	article iframe {
-		height:200px!important;
 	}
 	article h1 {
 		font-size:23px;
