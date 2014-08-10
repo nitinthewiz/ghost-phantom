@@ -62,3 +62,7 @@ Also remove the background-cover code from `post.hbs`:
 ```
 
 This will remove the first image in your article and use it as the cover photo, so make sure you put a featured image at the top of your article.
+
+## Forking and derivatives
+
+I don't really mind what you do with this project, as long as your blog looks awesome. I'd appreciate if you left the `<meta name="designer">` as Hayden Bleasel but I won't hold it against you if you change it. I think it'd be good if you make some reference back to me so people can find the source project, but other than that just have fun. Also, if you're going to make style edits I recommend creating a new stylesheet and linking that up so you can still fetch the latest updates from here without losing all your changes.
