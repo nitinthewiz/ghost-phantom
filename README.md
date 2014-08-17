@@ -36,26 +36,7 @@ Once you have that, just open `partials/comments.hbs` and replace the `YOUR_SHOR
 
 ## Featured images
 
-While featured images are not part of Ghost (yet), there are ways to implement them with some hacky Javascript. In `post.hbs`, add the following code just after `{{> content}}`:
-
-```
-<script>
-    var image = document.querySelectorAll("article img:first-child")[0],
-        src = image.src,
-        parent = image.parentNode;
-        header = document.getElementsByTagName("header")[0],
-        facebook = document.querySelectorAll("meta[property='og:image']")[0],
-        twitter = document.querySelectorAll("meta[property='twitter:image']")[0];
-    header.style.backgroundImage = 'url(' + src + ')';
-    if (facebook) { facebook.setAttribute("content", src); }
-    if (twitter) { twitter.setAttribute("content", src); }
-    image.id = "remove-this";
-    var im = document.getElementById("remove-this").parentNode;
-    im.parentNode.removeChild(im);
-</script>
-```
-
-Also remove the background-cover code from `post.hbs`:
+While featured images are not part of Ghost (yet), there are ways to implement them with some hacky Javascript. If you want to enable featured images, simply open `post.hbs` (and/or `page.hbs`) and remove the exclamation mark in the comments block, so `{{!> featured}}` becomes `{{> featured}}`. You can also remove the background-cover code from each file to prevent flashing content:
 
 ```
 {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}

@@ -1,0 +1,14 @@
+<script>
+    var image = document.querySelectorAll("article img:first-child")[0],
+        src = image.src,
+        parent = image.parentNode;
+        header = document.getElementsByTagName("header")[0],
+        facebook = document.querySelectorAll("meta[property='og:image']")[0],
+        twitter = document.querySelectorAll("meta[property='twitter:image']")[0];
+    header.style.backgroundImage = 'url(' + src + ')';
+    if (facebook) { facebook.setAttribute("content", src); }
+    if (twitter) { twitter.setAttribute("content", src); }
+    image.id = "remove-this";
+    var im = document.getElementById("remove-this").parentNode;
+    im.parentNode.removeChild(im);
+</script>
