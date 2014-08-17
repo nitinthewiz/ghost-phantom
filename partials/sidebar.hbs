@@ -7,11 +7,7 @@
     <div class="tags animated fadeInUp">
         {{#if tags}}
             <strong>Tags</strong>
-            <ul>
-                {{#foreach tags}}
-                    <li>{{name}}</li>
-                {{/foreach}}
-            </ul>
+            {{tags separator=""}}
         {{/if}}
     </div>
 </div>

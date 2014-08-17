@@ -183,14 +183,11 @@ header .share {
 	display:block;
 	color:#fff;
 }
-.meta ul {
-	padding:0;
-}
-.meta ul, .meta time {
+.meta time {
 	font-weight:300;
 	color:#7f8c8d;
 }
-.meta strong, .meta ul, .meta time {
+.meta strong, .meta .tags a, .meta time {
 	font-size:13px;
 	line-height:22px;
 }
@@ -207,9 +204,9 @@ header .share {
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
 }
-.meta .tags ul {
-	list-style:none;
-	margin:0;
+.meta .tags a {
+	display: block;
+	border: none;
 }
 .meta .separator {
 	display:none;
@@ -363,10 +360,11 @@ header .share a {
 		padding-top:120px;
 		padding-bottom:240px;
 	}
-	.meta li:after {
+	.meta a:after {
 		content:",";
+		margin-right: 4px;
 	}
-	.meta li:last-child:after {
+	.meta a:last-child:after {
 		content:"";
 	}
 	.meta strong {
@@ -395,7 +393,7 @@ header .share a {
 	.home-template header, .archive-template header {
 		padding-bottom:0;
 	}
-	.meta ul, .meta li, .meta time, .published, .meta .tags, .meta .separator {
+	.meta time, .published, .meta .tags, .meta .tags a, .meta .separator {
 		display:inline-block;
 	}
 }
