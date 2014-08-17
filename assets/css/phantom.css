@@ -251,7 +251,7 @@ article p > img {
 	display:block;
 	margin:0 auto;
 }
-article p! > img {
+.article-image {
 	width:800px;
 	margin:80px -150px;
 }
@@ -392,7 +392,7 @@ header .container .share a {
 		width:400px;
 		margin-top:20px;
 	}
-	article p! > img {
+	.article-image {
 		width: 100%;
 		margin: 80px 0;
 	}
@@ -438,7 +438,7 @@ header .container .share a {
 	.meta .separator {
 		display:none;
 	}
-	article p! > img {
+	.article-image {
 		margin:20px 0;
 	}
 	article h1 {

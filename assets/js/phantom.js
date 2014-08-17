@@ -7,6 +7,8 @@ $(function () {
 
     FastClick.attach(document.body);
 
+    $('article img').parent().addClass('article-image');
+
     $('#twitter').click(function () {
         window.open(this.href, 'twitter-share', 'width=550,height=235');
         return false;
