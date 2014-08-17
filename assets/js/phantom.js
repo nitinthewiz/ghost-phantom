@@ -26,7 +26,8 @@ $(function () {
         responsive: true,
         positionProperty: "transfade",
         parallaxBackgrounds: false,
-        verticalOffset: 90
+        verticalOffset: 90,
+        hideDistantElements: false
     });
 
     // Social sharing links
