@@ -91,7 +91,7 @@ a:hover {
 strong {
 	font-weight:600;
 }
-.pagination {
+.container, .pagination {
 	position:relative;
 	width:500px;
 	margin:0 auto;
@@ -337,7 +337,7 @@ header .share a {
 	color:#464c4c;
 }
 @media (max-width: 992px) {
-	.pagination {
+	.container, .pagination {
 		width:auto;
 		max-width:650px;
 		padding:0 8%;
@@ -405,7 +405,7 @@ header .share a {
 		font-size:13px;
 		line-height:25px;
 	}
-	.pagination {
+	.container, .pagination {
 		padding:0 6%;
 	}
 	.comments, footer {
