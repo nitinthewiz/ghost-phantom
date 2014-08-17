@@ -6,15 +6,8 @@
 
     <header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         <div class="container">
-            <div class="title animated fadeInUp">
-                <h1>{{title}}</h1>
-                <div class="share">
-                    Share this article on <a id="twitter" href="http://twitter.com/share?text={{encode title}}&amp;url={{url absolute='true'}}">Twitter</a>, <a id="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}">Facebook</a> or <a id="google-plus" href="https://plus.google.com/share?url={{url absolute='true'}}">Google+</a>.
-                </div>
-            </div>
-
+            {{> title}}
             {{> sidebar}}
-
         </div>
     </header>
 
