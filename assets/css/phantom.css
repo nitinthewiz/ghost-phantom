@@ -7,7 +7,6 @@
 		url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
 	font-weight: 300;
 	font-style: normal;
-
 }
 
 @font-face {
@@ -19,7 +18,6 @@
 		url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
 	font-weight: 400;
 	font-style: normal;
-
 }
 
 @font-face {
@@ -31,9 +29,7 @@
 		url('../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
 	font-weight: 600;
 	font-style: normal;
-
 }
-
 
 @-webkit-keyframes fadeInUp {
 	0% {
@@ -95,7 +91,7 @@ a:hover {
 strong {
 	font-weight:600;
 }
-.container, .pagination {
+.pagination {
 	position:relative;
 	width:500px;
 	margin:0 auto;
@@ -121,20 +117,20 @@ strong {
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
 }
-.navigation .content, .navigation .brand {
+.content, .brand {
 	display:block;
 	float:left;
 }
-.navigation .brand {
+.brand {
 	border:none;
 	padding:30px 0;
 	line-height:0;
 }
-.navigation .brand img {
+.brand img {
 	width:auto;
 	height:30px;
 }
-.navigation .content {
+.content {
 	line-height:90px;
 	margin:0;
 }
@@ -162,19 +158,19 @@ header .container {
 	padding-top:130px;
 	padding-bottom:260px;
 }
-header .container .title {
+.title {
 	-webkit-animation-delay:.5s;
 	animation-delay:.5s;
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
 }
-header .container .title h1 {
+.title h1 {
 	font-size:55px;
 	font-weight:300;
 	line-height:60px;
 	margin:0;
 }
-header .container .share {
+header .share {
 	margin-top:20px;
 	line-height:28px;
 	color:#7f8c8d;
@@ -198,7 +194,7 @@ header .container .share {
 	font-size:13px;
 	line-height:22px;
 }
-.meta .published {
+.published {
 	-webkit-animation-delay:.75s;
 	animation-delay:.75s;
 	-webkit-animation-duration:1s;
@@ -312,7 +308,7 @@ footer h1 {
 footer p {
 	margin:0;
 }
-.home-template header .container .title a, .archive-template header .container .title a {
+.home-template .title a, .archive-template .title a {
 	display:block;
 	border-bottom:none;
 }
@@ -328,16 +324,10 @@ footer p {
 .home-template article, .archive-template article {
 	border-bottom:2px solid #f2f3f4;
 }
-.page #journal-link {
-	color:#7f8c8d;
-}
 .page footer {
 	border-top:2px solid #f2f3f4;
 }
-.navigation #journal-link, .page #journal-link:hover, .page #portfolio-link {
-	color:#fff;
-}
-header .container .share a {
+header .share a {
 	border:none;
 }
 .home-template header:before, .archive-template header:before, .home-template article h1, .archive-template article h1, .home-template article h2, .archive-template article h2, .home-template article h3, .archive-template article h3 {
@@ -347,7 +337,7 @@ header .container .share a {
 	color:#464c4c;
 }
 @media (max-width: 992px) {
-	.container, .pagination {
+	.pagination {
 		width:auto;
 		max-width:650px;
 		padding:0 8%;
@@ -358,15 +348,15 @@ header .container .share a {
 		left:0;
 		width:auto;
 	}
-	.navigation .content {
+	.content {
 		margin-left:20px;
 	}
-	header .container .title h1 {
+	.title h1 {
 		margin:0;
 		font-size:49px;
 		line-height:54px;
 	}
-	header .container .title {
+	.title {
 		width:90%;
 	}
 	header .container {
@@ -382,10 +372,10 @@ header .container .share a {
 	.meta strong {
 		display:none;
 	}
-	.meta .published:after {
+	.published:after {
 		margin-left:10px;
 	}
-	.meta .published, .meta .tags {
+	.published, .meta .tags {
 		margin-top:0;
 	}
 	.meta.text-right {
@@ -405,7 +395,7 @@ header .container .share a {
 	.home-template header, .archive-template header {
 		padding-bottom:0;
 	}
-	.meta ul, .meta li, .meta time, .meta .published, .meta .tags, .meta .separator {
+	.meta ul, .meta li, .meta time, .published, .meta .tags, .meta .separator {
 		display:inline-block;
 	}
 }
@@ -415,16 +405,16 @@ header .container .share a {
 		font-size:13px;
 		line-height:25px;
 	}
-	.container, .pagination {
+	.pagination {
 		padding:0 6%;
 	}
 	.comments, footer {
 		padding:60px 0;
 	}
-	.navigation .content {
+	.content {
 		font-size:18px;
 	}
-	header .container .title h1 {
+	.title h1 {
 		font-size:29px;
 		line-height:37px;
 	}
@@ -432,10 +422,10 @@ header .container .share a {
 		padding-top:60px;
 		padding-bottom:120px;
 	}
-	.meta .published:after {
+	.published:after {
 		margin-left:5px;
 	}
-	.meta .published, .meta .tags {
+	.published, .meta .tags {
 		display:block;
 	}
 	.meta .separator {
@@ -465,12 +455,12 @@ header .container .share a {
 	footer h1 {
 		font-size:20px;
 	}
-	header .container .title, .meta {
+	.title, .meta {
 		width:260px;
 	}
 }
 @media print {
-	header .container .share {
+	header .share {
 		margin-top:30px;
 	}
 	header .container {
