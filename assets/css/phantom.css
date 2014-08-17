@@ -187,7 +187,7 @@ header .share {
 	font-weight:300;
 	color:#7f8c8d;
 }
-.meta strong, .meta .tags a, .meta time {
+.meta strong, .tags a, .meta time {
 	font-size:13px;
 	line-height:22px;
 }
@@ -197,14 +197,14 @@ header .share {
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
 }
-.meta .tags {
+.tags {
 	margin-top:30px;
 	-webkit-animation-delay:1s;
 	animation-delay:1s;
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
 }
-.meta .tags a {
+.tags a {
 	display: block;
 	border: none;
 }
@@ -246,8 +246,8 @@ article p > img {
 	margin:0 auto;
 }
 .article-image {
-	width:800px;
-	margin:80px -150px;
+	width:940px;
+	margin:80px -220px;
 }
 article h1, article h2, article h3 {
 	font-weight:300;
@@ -373,7 +373,7 @@ header .share a {
 	.published:after {
 		margin-left:10px;
 	}
-	.published, .meta .tags {
+	.published, .tags {
 		margin-top:0;
 	}
 	.meta.text-right {
@@ -387,13 +387,10 @@ header .share a {
 		width: 100%;
 		margin: 80px 0;
 	}
-	footer span {
-		display:block;
-	}
 	.home-template header, .archive-template header {
 		padding-bottom:0;
 	}
-	.meta time, .published, .meta .tags, .meta .tags a, .meta .separator {
+	.meta time, .published, .tags, .tags a, .meta .separator {
 		display:inline-block;
 	}
 }
@@ -423,7 +420,7 @@ header .share a {
 	.published:after {
 		margin-left:5px;
 	}
-	.published, .meta .tags {
+	.published, .tags {
 		display:block;
 	}
 	.meta .separator {
