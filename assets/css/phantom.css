@@ -169,9 +169,9 @@ header .container .title {
 	animation-duration:1s;
 }
 header .container .title h1 {
-	font-size:49px;
+	font-size:55px;
 	font-weight:300;
-	line-height:54px;
+	line-height:60px;
 	margin:0;
 }
 header .container .share {
@@ -181,6 +181,7 @@ header .container .share {
 }
 .meta {
 	top:140px;
+	text-transform: capitalize;
 }
 .meta strong {
 	display:block;
@@ -362,6 +363,8 @@ header .container .share a {
 	}
 	header .container .title h1 {
 		margin:0;
+		font-size:49px;
+		line-height:54px;
 	}
 	header .container .title {
 		width:90%;
@@ -457,7 +460,7 @@ header .container .share a {
 		margin:15px 0;
 	}
 	article {
-		padding:20px 0 40px;
+		padding:40px 0;
 	}
 	footer h1 {
 		font-size:20px;
