@@ -23,7 +23,6 @@ $(function () {
     // Execute Stellar.js
     $.stellar({
         horizontalScrolling: false,
-        responsive: true,
         positionProperty: "transfade",
         parallaxBackgrounds: false,
         verticalOffset: 90,
