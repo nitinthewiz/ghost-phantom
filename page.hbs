@@ -1,14 +1,11 @@
-{{! Plug this code into the body }}
 {{!< default}}
 
-{{! Post Context }}
 {{#post}}
 
     {{> post-meta}}
 
-    {{! Header }}
     <header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-        <div class="container">
+        <div class="container" data-stellar-ratio="0.75">
             {{> title}}
             <div class="sidebar text-right meta">
                 <div class="published animated fadeInUp">
