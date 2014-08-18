@@ -13,6 +13,18 @@
 
     {{> content}}
 
+    <div class="container">
+        <div class="author animated fadeIn clearfix">
+            {{#author}}
+                <img src="{{image}}" alt="{{name}}" />
+                <div class="info">
+                    <p class="name">{{name}}</p>
+                    <p class="bio">{{bio}}</p>
+                </div>
+            {{/author}}
+        </div>
+    </div>
+
     {{!> featured}}
 
     {{!> comments}}

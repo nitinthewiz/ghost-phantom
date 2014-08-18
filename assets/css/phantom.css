@@ -218,7 +218,7 @@ article {
 	animation-delay:1.25s;
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
-	padding:80px 0;
+	padding:80px 0 40px;
 }
 article pre {
 	overflow:scroll;
@@ -283,12 +283,37 @@ article input:hover {
 article input:focus {
 	border:1px solid #999;
 }
-.comments {
-	background:#f2f3f4;
+.author {
+	border-top: 1px solid #ddd;
+	padding: 40px 0 80px;
+}
+.author img {
+	border-radius: 50%;
+	width: 60px;
+	float: left;
+}
+.author .info {
+	width: 385px;
+	float: left;
+	margin-left: 15px;
+}
+.author .name {
+	margin: 0;
+	font-weight: 600;
+}
+.author .bio {
+	margin: 0;
+	font-size: 16px;
+	line-height: 30px;
+}
+.author, .comments {
 	-webkit-animation-delay:1.5s;
 	animation-delay:1.5s;
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
+}
+.comments {
+	background:#f2f3f4;
 }
 footer {
 	-webkit-animation-delay:2s;
@@ -393,6 +418,13 @@ header .share a {
 	.meta time, .published, .tags, .tags a, .meta .separator {
 		display:inline-block;
 	}
+	.author .info {
+		width: 320px;
+	}
+	.author .bio {
+		font-size: 14px;
+		line-height: 28px;
+	}
 }
 @media (max-width: 480px) {
 	p, ul, ol {
@@ -445,13 +477,24 @@ header .share a {
 		margin:15px 0;
 	}
 	article {
-		padding:40px 0;
+		padding:40px 0 20px;
 	}
 	footer h1 {
 		font-size:20px;
 	}
 	.title, .meta {
 		width:260px;
+	}
+	.author .info {
+		margin-left: 0;
+		width: auto;
+	}
+	.author img {
+		display: none;
+	}
+	.author .bio {
+		font-size: 13px;
+		line-height: 25px;
 	}
 }
 @media print {
