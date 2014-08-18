@@ -48,6 +48,16 @@ This will remove the first image in your article and use it as the cover photo, 
 
 I don't really mind what you do with this project, as long as your blog looks awesome. I'd appreciate if you left the `<meta name="designer">` as Hayden Bleasel but I won't hold it against you if you change it. I think it'd be good if you make some reference back to me so people can find the source project, but other than that just have fun. Also, if you're going to make style edits I recommend creating a new stylesheet and linking that up so you can still fetch the latest updates from here without losing all your changes.
 
+## Sites using Phantom
+
+If your site uses Phantom, message me and I'll add it to the list!
+
+- [FounderSquad](http://foundersquad.com/en/articles/)
+- [Josh Clayton](http://imjo.sh/)
+- [John Vantuyl](http://johnvantuyl.com/)
+- [David Martínez](http://blog.davidmr.es/)
+- [Wen In Code](http://www.wenincode.com/)
+
 ## Credits
 
 I'd like to give a huge thank you to David Dupouy from [FounderSquad](http://foundersquad.com/en/articles/) for helping me resolve a number of issues with the theme and introduce a new "featured images" functionality.
