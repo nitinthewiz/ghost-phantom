@@ -321,11 +321,17 @@ footer {
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
 }
-footer h1 {
-	font-size:24px;
+.copyright {
+	font-size:30px;
 	font-weight:400;
 	color:#464c4c;
-	margin:0 0 10px;
+	margin:0 0 20px;
+}
+.theme {
+	font-weight: 600;
+	border: none;
+	color: #ddd;
+	font-size: 12px;
 }
 footer p {
 	margin:0;
@@ -425,6 +431,10 @@ header .share a {
 		font-size: 14px;
 		line-height: 28px;
 	}
+	.copyright {
+		font-size:24px;
+		margin:0 0 10px;
+	}
 }
 @media (max-width: 480px) {
 	p, ul, ol {
@@ -479,8 +489,8 @@ header .share a {
 	article {
 		padding:40px 0 20px;
 	}
-	footer h1 {
-		font-size:20px;
+	.copyright {
+		font-size:17px;
 	}
 	.title, .meta {
 		width:260px;
