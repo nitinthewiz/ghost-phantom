@@ -323,9 +323,10 @@ footer {
 }
 .copyright {
 	font-size:30px;
+	line-height: 40px;
 	font-weight:400;
 	color:#464c4c;
-	margin:0 0 20px;
+	margin: 0 -80px 20px;
 }
 .theme {
 	font-weight: 600;
@@ -432,8 +433,10 @@ header .share a {
 		line-height: 28px;
 	}
 	.copyright {
-		font-size:24px;
-		margin:0 0 10px;
+		margin: 0;
+	}
+	.copyright span {
+		display: block;
 	}
 }
 @media (max-width: 480px) {
@@ -491,6 +494,7 @@ header .share a {
 	}
 	.copyright {
 		font-size:17px;
+		line-height: 26px;
 	}
 	.title, .meta {
 		width:260px;
