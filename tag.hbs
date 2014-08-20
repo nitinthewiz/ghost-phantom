@@ -6,6 +6,11 @@
             <h1>{{tag.name}}</h1>
             {{> share}}
         </div>
+        <div class="sidebar text-right meta">
+            <div class="published animated fadeInUp">
+                <strong>{{plural pagination.total empty="No posts" singular="% article" plural="% articles"}}</strong>
+            </div>
+        </div>
     </div>
 </header>
 
