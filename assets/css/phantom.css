@@ -299,7 +299,11 @@ article input:focus {
 }
 .author .name {
 	margin: 0;
+	display: block;
+	border: none;
 	font-weight: 600;
+	font-size: 18px;
+	line-height: 34px;
 }
 .author .bio {
 	margin: 0;
