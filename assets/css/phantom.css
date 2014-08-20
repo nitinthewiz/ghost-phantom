@@ -170,6 +170,10 @@ header .container {
 	line-height:60px;
 	margin:0;
 }
+.title p {
+	max-width: 420px;
+	margin-bottom: 0;
+}
 header .share {
 	margin-top:20px;
 	line-height:28px;
@@ -183,7 +187,7 @@ header .share {
 	display:block;
 	color:#fff;
 }
-.meta time {
+.meta time, .tags a {
 	font-weight:300;
 	color:#7f8c8d;
 }
@@ -373,7 +377,7 @@ header .share a {
 .sample:before, .excerpt article h1, .excerpt article h2, .excerpt article h3 {
 	display:none;
 }
-.sample .container a, .sample .meta strong {
+.sample .title a, .sample .meta strong {
 	color:#464c4c;
 }
 @media (max-width: 992px) {
