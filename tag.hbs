@@ -1,0 +1,12 @@
+{{!< default}}
+
+<header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="container" data-stellar-ratio="0.75">
+        <div class="title animated fadeInUp">
+            <h1>{{tag.name}}</h1>
+            {{> share}}
+        </div>
+    </div>
+</header>
+
+{{> excerpts}}

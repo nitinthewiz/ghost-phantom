@@ -1,10 +1,6 @@
-{{!< default}}
-
-{{> index-meta}}
-
 {{#foreach posts}}
 
-    <header class="animated fadeIn">
+    <div class="sample animated fadeIn">
         <div class="container">
             <div class="title animated fadeInUp">
                 <a href="{{url}}">
@@ -13,9 +9,9 @@
             </div>
             {{> sidebar}}
         </div>
-    </header>
+    </div>
 
-    <article class="animated fadeIn {{post_class}}">
+    <article class="excerpt animated fadeIn {{post_class}}">
         <div class="container">
             <p>{{excerpt words="100"}}&hellip;</p>
         </div>
