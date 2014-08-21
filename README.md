@@ -57,6 +57,7 @@ If your site uses Phantom, message me and I'll add it to the list!
 - [John Vantuyl](http://johnvantuyl.com/)
 - [David Martínez](http://blog.davidmr.es/)
 - [Wen In Code](http://www.wenincode.com/)
+- [Anton Samper Rivaya](http://antonsamper.ghost.io/)
 
 ## Credits
 
