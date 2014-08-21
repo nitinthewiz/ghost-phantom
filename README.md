@@ -1,6 +1,6 @@
 # Phantom
 
-A minimalistic theme for [Ghost](https://ghost.org/) inspired by the [Designmodo Journal](http://journal.designmodo.com/). Phantom combines clean, beautiful typography with large photos and an unobtrusive layout. Great for both print and code. Oh, and it's free. Check out the [demo](http://haydenbleasel.com/phantom/) and the [design project](https://dribbble.com/shots/1691685-Phantom-for-Ghost).
+A minimalistic theme for [Ghost](https://ghost.org/) inspired by the [Designmodo Journal](http://journal.designmodo.com/). Phantom combines clean, beautiful typography with large photos and an unobtrusive layout. Great for both print and code. Oh, and it's free. Check out the [demo](http://haydenbleasel.com/phantom/) and the [design project](https://dribbble.com/shots/1693641-Phantom-for-Ghost).
 
 ![Phantom](assets/images/mockup.jpg)
 
