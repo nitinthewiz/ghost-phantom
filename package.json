@@ -4,12 +4,12 @@
   "description": "A minimalistic theme for Ghost inspired by the Designmodo Journal.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/haydenbleasel/phantom.git"
+    "url": "https://github.com/haydenbleasel/ghost-themes.git"
   },
   "author": "Hayden Bleasel <haydenbleasel@gmail.com>",
   "bugs": {
-    "url": "https://github.com/haydenbleasel/phantom/issues"
+    "url": "https://github.com/haydenbleasel/ghost-themes/issues"
   },
-  "homepage": "https://github.com/haydenbleasel/phantom",
+  "homepage": "https://github.com/haydenbleasel/ghost-themes",
   "private": true
 }
