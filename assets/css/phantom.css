@@ -380,6 +380,24 @@ header .share a {
 .sample .title a, .sample .meta strong {
 	color:#464c4c;
 }
+.blog-cover {
+	padding: 180px 8%;
+	text-align: center;
+}
+.blog-title {
+	font-size: 75px;
+	line-height: 75px;
+	font-weight: 200;
+	position: relative;
+	margin: 0;
+}
+.blog-description {
+	font-weight: 400;
+	max-width: 540px;
+	margin: 10px auto 0;
+	position: relative;
+	font-size: 25px;
+}
 @media (max-width: 992px) {
 	.container, .pagination {
 		width:auto;
@@ -452,6 +470,14 @@ header .share a {
 	}
 	.copyright span {
 		display: block;
+	}
+	.blog-title {
+		font-size: 49px;
+		line-height: 49px;
+	}
+	.blog-description {
+		font-size: 18px;
+		max-width: 400px;
 	}
 }
 @media (max-width: 480px) {
@@ -527,6 +553,14 @@ header .share a {
 	.author .bio {
 		font-size: 13px;
 		line-height: 25px;
+	}
+	.blog-cover {
+		padding: 90px 6%;
+		text-align: left;
+	}
+	.blog-title, .blog-description {
+		max-width: 270px;
+		margin: 10px 0 0 0;
 	}
 }
 @media print {
