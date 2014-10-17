@@ -4,7 +4,8 @@
 
     {{> post-meta}}
 
-    <header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <header class="animated fadeIn"
+        {{#if image}}style="background-image: url({{image}})"{{/if}}>
         <div class="container" data-stellar-ratio="0.75">
             {{> title}}
             {{> sidebar}}
@@ -24,8 +25,6 @@
             {{/author}}
         </div>
     </div>
-
-    {{!> featured}}
 
     {{!> comments}}
 
