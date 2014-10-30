@@ -81,12 +81,12 @@ a {
 	color:#7f8c8d;
 	text-decoration:none;
 	border-bottom:1px dotted #ddd;
+	-webkit-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
 }
 a:hover {
 	color:#2e9fff;
 	text-decoration:none;
-	transition: color .2s ease-in-out;
 }
 strong {
 	font-weight:600;
