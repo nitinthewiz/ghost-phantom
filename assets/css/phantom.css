@@ -140,7 +140,6 @@ header {
 	color:#fff;
 	background-position:center center;
 	background-repeat:no-repeat;
-	-webkit-background-size:cover cover;
 	background-size:cover;
 	-webkit-animation-duration:3s;
 	animation-duration:3s;
@@ -217,30 +216,19 @@ header .share {
 	color:#7f8c8d;
 	margin:0 10px;
 }
+.push-article {
+	padding-top:40px;
+}
 article {
 	-webkit-animation-delay:1.25s;
 	animation-delay:1.25s;
 	-webkit-animation-duration:1s;
 	animation-duration:1s;
-	padding:80px 0 40px;
+	padding:40px 0;
 }
-article pre {
-	overflow:scroll;
-	color:#777;
-	white-space:pre;
-	background:#f2f3f4;
-	border:1px solid #ddd;
-	border-radius:8px;
-	padding:20px;
-}
-article .gist pre {
-	border-radius:0;
-}
-article pre code {
-	font-family:Consolas, "Liberation Mono", Courier, monospace;
-	font-size:14px;
-	font-weight:400;
-	line-height:24px;
+.hljs {
+	padding: 20px;
+	border-radius: 8px;
 }
 article hr {
 	border:1px solid #ddd;

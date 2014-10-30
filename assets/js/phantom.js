@@ -1,5 +1,5 @@
 /*jslint browser:true, unparam:true*/
-/*global $, FastClick*/
+/*global $, FastClick, hljs*/
 
 $(function () {
 
@@ -28,6 +28,9 @@ $(function () {
         verticalOffset: 90,
         hideDistantElements: false
     });
+
+    // Execute Highlight.js
+    hljs.initHighlightingOnLoad();
 
     // Social sharing links
     $('#twitter').click(function () {
