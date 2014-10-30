@@ -10,7 +10,12 @@
         </div>
         <div class="sidebar text-right meta">
             <div class="published animated fadeInUp">
-                <strong>{{plural pagination.total empty="No posts" singular="% article" plural="% articles"}}</strong>
+                <div class="author-image">
+                    {{#author}}
+                        <img src="{{image}}" alt="{{name}}" />
+                    {{/author}}
+                </div>
+                <strong class="article-count text-center">{{plural pagination.total empty="No posts" singular="% article" plural="% articles"}}</strong>
             </div>
         </div>
     </div>
