@@ -280,6 +280,11 @@ article input:focus {
 	border-top: 1px solid #ddd;
 	padding: 40px 0 80px;
 }
+.author img {
+	border-radius: 50%;
+	width: 100px;
+	float: left;
+}
 .article-count {
 	margin-top: 20px;
 }
