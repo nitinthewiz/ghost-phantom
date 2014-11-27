@@ -91,6 +91,10 @@ a:hover {
 strong {
 	font-weight:600;
 }
+.excerpt {
+	z-index:-1;
+	position:relative;
+}
 .container, .pagination {
 	position:relative;
 	width:500px;
