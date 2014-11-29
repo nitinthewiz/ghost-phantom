@@ -100,6 +100,21 @@ strong {
 	width:500px;
 	margin:0 auto;
 }
+.pagination {
+	text-align: center;
+	font-size: 13px;
+}
+.page-number {
+	color: #7f8c8d;
+}
+.older-posts {
+	position: absolute;
+	right: 0;
+}
+.newer-posts {
+	position: absolute;
+	left: 0;
+}
 .sidebar {
 	position:absolute;
 	left:-190px;
