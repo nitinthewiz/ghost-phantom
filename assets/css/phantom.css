@@ -253,7 +253,7 @@ article {
 article hr {
 	border:1px solid #ddd;
 }
-article p > img {
+article p > img, article a > img {
 	display:block;
 	margin:0 auto;
 }
