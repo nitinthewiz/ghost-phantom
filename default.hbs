@@ -78,10 +78,10 @@
         {{ghost_foot}}
 
         {{! Deferred scripts }}
-        <script src="{{asset 'js/jquery-1.11.32.min.js'}}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript">
         if (typeof jQuery == 'undefined') {
-            document.write('<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></'+'script>');
+            document.write('<script type="text/javascript" src="{{asset 'js/jquery-1.11.3.min.js'}}"></'+'script>');
         }
         </script>
         
