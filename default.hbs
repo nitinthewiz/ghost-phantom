@@ -78,6 +78,13 @@
         {{ghost_foot}}
 
         {{! Deferred scripts }}
+        <script src="{{asset 'js/jquery-1.11.32.min.js'}}"></script>
+        <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+            document.write('<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></'+'script>');
+        }
+        </script>
+        
         <script src="{{asset 'js/fastclick.js'}}"></script>
         <script src="{{asset 'js/stellar.js'}}"></script>
         <script src="{{asset 'js/highlight.js'}}"></script>
