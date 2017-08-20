@@ -35,9 +35,9 @@
         <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png'}}" />
 
         {{! Prerendering and Prefetching }}
-        {{#if @blog.cover}}
-            <link rel="prerender" href="{{@blog.cover}}" />
-            <link rel="prefetch" href="{{@blog.cover}}" />
+        {{#if @blog.cover_image}}
+            <link rel="prerender" href="{{@blog.cover_image}}" />
+            <link rel="prefetch" href="{{@blog.cover_image}}" />
         {{/if}}
         <link rel="dns-prefetch" href="//fonts.googleapis.com/" />
 
