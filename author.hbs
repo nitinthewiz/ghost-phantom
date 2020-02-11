@@ -1,6 +1,6 @@
 {{!< default}}
 
-<header class="animated fadeIn" {{#if author.cover}}style="background-image: url({{author.cover}})"{{/if}}>
+<header class="animated fadeIn" {{#if primary_author.cover_image}}style="background-image: url({{primary_author.cover_image}})"{{/if}}>
     <div class="container" data-stellar-ratio="0.75">
         <div class="title animated fadeInUp">
             {{#author}}
@@ -12,7 +12,7 @@
             <div class="published animated fadeInUp">
                 <div class="author-image">
                     {{#author}}
-                        <img src="{{image}}" alt="{{name}}" />
+                        <img src="{{image_url}}" alt="{{name}}" />
                     {{/author}}
                 </div>
                 <strong class="article-count text-center">{{plural pagination.total empty="No posts" singular="% article" plural="% articles"}}</strong>
