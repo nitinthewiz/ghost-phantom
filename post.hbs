@@ -4,7 +4,7 @@
 
     {{> post-meta}}
 
-    <header class="animated fadeIn" {{#if image}}style="background-image: url({{image}})"{{/if}}>
+    <header class="animated fadeIn" {{#if profile_image}}style="background-image: url({{image_url}})"{{/if}}>
         <div class="container" data-stellar-ratio="0.75">
             {{> title}}
             {{> sidebar}}
@@ -21,7 +21,7 @@
     <div class="container">
         <div class="author animated fadeIn clearfix">
             {{#author}}
-                <img src="{{image}}" alt="{{name}}" />
+                <img src="{{image_url}}" alt="{{name}}" />
                 <div class="info">
                     <a href="{{url}}" class="name">{{name}}</a>
                     <p class="bio">{{bio}}</p>
